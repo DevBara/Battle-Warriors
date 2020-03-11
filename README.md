@@ -2,9 +2,6 @@
 
 Game Instructions:
 
-Game Objective:
-It is up to you to determine where the enemy ships are located by using strategic strategies! Win the game by destroying all of the enemy ships.
-
 Gameplay:
 1)Players take turns firing shots, there is 1 shot per turn. A shot is accomplished by click on one square.
 
@@ -15,3 +12,11 @@ Gameplay:
 4) If any player successfully hits, the square will turn red.
 
 5) The first player to sink all 3 of their opponent ships wins the game.
+
+Game Objective:
+It is up to you to determine where the enemy ships are located by using strategic strategies!
+There are 3 ships per player
+
+How to Win:
+ Win the game by destroying all of the enemy ships. T
+
