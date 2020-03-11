@@ -3,8 +3,7 @@
 ## DevBara.github.io
 
 
-![Image of Background](https://www.google.com/
-https://i.pinimg.com/originals/3a/98/db/3a98dbcdfc886e10506ff40a7878d39d.jpg)
+![Image of Background](https://i.pinimg.com/originals/3a/98/db/3a98dbcdfc886e10506ff40a7878d39d.jpg)
 ## Game Instructions:
 
 ## Gameplay:
