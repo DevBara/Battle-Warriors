@@ -25,3 +25,22 @@ There are 3 ships per player
 ## How to Win:
  Win the game by destroying all of the enemy ships. T
 
+## Schedule (Objective/Goals)
+## Wednesday- 
+1)Complete wireframe 
+2)Complete pseudocode
+## Thursday
+1) Begin inputting HTML elements
+    - Gameboard
+    - Ships
+    - Headings/paragraphs
+## Friday
+1) Begin implementing Javascript
+    - Start from defining variables
+    - Create functional gameboard (10x10)
+    -
+## Sunday
+1) Continue JS
+
+## Monday
+1) Styling using CSS
