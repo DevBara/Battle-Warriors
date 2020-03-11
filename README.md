@@ -1,7 +1,7 @@
 # DevBara.github.io
 
 
-![wireframe]
+![wireframe](./wireframe/testing.svg)
 #Game Instructions:
 
 #Gameplay:
