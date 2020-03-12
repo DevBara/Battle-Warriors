@@ -3,8 +3,10 @@
 ## DevBara.github.io
 
 
-![Image of Background](https://docs.google.com/presentation/d/1bI0qUa-q19Bar9s-ODZXUQyriX2BZptCzG9QtlurRfk/edit)
-![Image of How To](https://docs.google.com/presentation/u/0/d/1bI0qUa-q19Bar9s-ODZXUQyriX2BZptCzG9QtlurRfk/export/svg?id=1bI0qUa-q19Bar9s-ODZXUQyriX2BZptCzG9QtlurRfk&pageid=g815a3977c8_0_1)
+![Image of Load Screen](https://lh3.googleusercontent.com/tqO_g9LVADxN3uw30MxmPDbwryjj4WnUBH5eiyvXXwb9umI_ZzCfAOLwDEO61rDKJaMJCsriRE0ExhbC1Bu7RmZIZS6_iadXtfHzzr9wWcpt3Hd01ft2tMEcRcGBM-nWR5T0622kGpc)
+![Image of How To](https://lh6.googleusercontent.com/1E-5SxQBYBO6mHpiZF4Klqywh6LJ6xRboL1PGHrVtO2GJCAa5KWsgmq1CIWMNRCUMlGceYRIo3ZSHcd9nTV08YWyoCL6yR2b9cvwMxPZ)
+![Image Gameboard](https://lh4.googleusercontent.com/L88COgAYay2cfxZpbDph7M96vZpDYKwfyA-YbstWWx5PKptwpBswUjp9MSwi8C05ycSPseXoLvXBOBF-A8G2f9NY3QRXnM21D6qB5sqS)
+![Image of End Game](https://lh3.googleusercontent.com/8Gx1SUcORxm0NzwiliavFHVzI11hZezBT7NpKFFa4FxoXGFRbLNf8saMvgufODQeTHZJpSh8TJPgSGJB7saY70Meze4tHw9fionvsXzn)
 ## Game Instructions:
 
 ## Gameplay:
