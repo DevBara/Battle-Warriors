@@ -1,7 +1,5 @@
 ## BattleShip
 
-## DevBara.github.io
-
 
 ![Image of Load Screen](https://lh3.googleusercontent.com/tqO_g9LVADxN3uw30MxmPDbwryjj4WnUBH5eiyvXXwb9umI_ZzCfAOLwDEO61rDKJaMJCsriRE0ExhbC1Bu7RmZIZS6_iadXtfHzzr9wWcpt3Hd01ft2tMEcRcGBM-nWR5T0622kGpc)
 ![Image of How To](https://lh6.googleusercontent.com/1E-5SxQBYBO6mHpiZF4Klqywh6LJ6xRboL1PGHrVtO2GJCAa5KWsgmq1CIWMNRCUMlGceYRIo3ZSHcd9nTV08YWyoCL6yR2b9cvwMxPZ)
