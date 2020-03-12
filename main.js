@@ -38,17 +38,30 @@ let gameBoard =document.getElementById('gameboard');
 console.log(gameboard);
 
 //Used jquery to build modal with the assistance of twitter coders
-const $howModal = $('#howModal');
-const $button = $('#howModal');
-const $close = $('.close');
+let modal = document.querySelector('.modal');
+let openModal = document.querySelector('.howto')
+let closeModal = document.querySelector('.close');
 
-$button.on('click', () => {
-    #howModal.fadeIn();
+function toggleModal(){
+    modal.classList.toggle("show-modal");
 }
+
+function windowOnClick(event){
+    if( event.target === modal){
+        toggleModal();
+    }
+}
+
+//Call on functions via EventListeners
+openModal.addEventListener("click", toggleModal);
+closeModal.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
 
 //This will start the game
-function start(){
-    document.getElementById('start').onclick
-    console.log("start");
+// function start(){
+//     document.getElementById('start').onclick
+//     console.log("start");
 
-}
+// }
+
