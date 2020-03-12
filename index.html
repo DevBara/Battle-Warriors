@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
 </head>
 <body>
-    <h1>BattleShip</h1>
-    <p>Click on the gameboard to begin</p>
+    <h1>Battle Warriors</h1>
+    <!-- Game Container -->
+    <div class ="buttons">
+       <div id="modal">
+            <input type="button" id="start" onClick="start()" value="Start">
+            <input type="button" id="HowTo" value ="How To?">
+       </div>
+    </div>
+
+    <!-- Instructions Modal: Gives ability for a box to pop up -->
+    <div id ="howModal" class ="modal">
+        <div class ="how-content">
+            <span class ="close">Test</span>
+            <p>Instructions Go Here</p>
+        </div>
+    </div>
     
-   <div id ="scoreboard"></div>
-   <div id= "gamefeed"></div>
-    
+
+
+
+    <script src="main.js"></script>
 </body>
 </html>
