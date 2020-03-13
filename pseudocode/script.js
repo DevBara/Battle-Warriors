@@ -28,3 +28,6 @@
 //function Gameover
    // if( healthCount == 8)
         //console.log("you have destroyed all the ships! You have won")
+
+//Resources Used
+//https://sabe.io/tutorials/how-to-create-modal-popup-box   //used to create modal
