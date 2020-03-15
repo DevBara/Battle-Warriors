@@ -29,3 +29,10 @@ function start(){
     console.log("start");
 }
 
+function gameInitialize(){
+    restartButton=document.getElementById("rematch");
+    restartButton.addEventListener("click");
+   return gameInitialize
+}
+
+console.log(gameInitialize)
