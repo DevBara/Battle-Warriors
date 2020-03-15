@@ -1,36 +1,118 @@
 body{
     background-image: url(https://i.pinimg.com/originals/3a/98/db/3a98dbcdfc886e10506ff40a7878d39d.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /* will make sure image is fixed according to window size */
     box-sizing: border-box; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
 }
 
-#container{
-    height:650px;
-    width: 95%;
-    margin: 1% auto;
-    border:1px solid orange;
-    border-radius: 30px;
-    padding: 20px;
-    -moz-margin: 10% auto;
-}
-h1{
-    font-size: 80px;
+#title-container{
     text-align: center;
-    padding-top:2px;
-    font-weight: bolder;
+    margin: 0 auto;
+    height: 100px;
+    color: #349edb;    
+}
+
+#title{
+    text-align: center;
+    font-size: 140px;
+}
+
+
+#subtitle{
+    text-align: center;
+    font-size: 70px;
+    margin-top: -20px;
+}
+
+/* .board{
+    width: 500px;
+    height: 20px;
+    display: block;
+    float: left;
+    border: 1px solid red;
+} */
+#left-game-board, #right-game-board{
+    position: relative;
+    width: 50%;
+    float:left;
+    padding-top: 5%;
     color:white;
 }
+
+ #player1-board,#player2-board {
+    position: relative;
+    margin: 50px auto 0 auto;
+    width: 500px;
+    height: 500px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    background-color: #03A9F4;
+    transition: all .1s;
+  } 
+
+#player1-container,#player2-container{
+    position: relative;
+    width: 500px;
+} 
+
+#player1-container,#player2-container{
+    text-align: center;
+    color:white;
+}
+
+#game-board-container{
+    text-align: center;
+    font-size: 25px;
+    margin: 110px auto 30px auto;
+    display: none;
+} 
+
+#game-board-text{
+    color: white;
+}
+
+#row-text-container{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#column-text-container{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#next-button{
+    text-align: center;
+    width: 180px;
+    margin: 10px;
+    font-size: 40px;
+
+}
+
+#current-player-turn{
+    font-size: 25px;
+    color: white
+}
+/* .board{
+    width: 600px;
+    height: 20px;
+    display: block;
+    float: left;
+    border: 1px solid red;
+} */
+
 h3{
     font-size: 70px;
     text-align: center;
     color:white;
 }
-.divider{
+/* .divider{
     width:10px;
     height:auto;
     display:inline-block;
-}
+} */
 
 li{
     list-style: none;
@@ -39,27 +121,36 @@ li{
     font-size: 30px;
 }
 
-.buttons{
-    margin: 0px 0px 0px 250px;
-   
+#turn-tracker-container {
+    text-align: center;
+    font-size: 60px;
+    margin: 120px auto 0px auto;
+    color: orange
 }
 
-
-#how,#begin{
-    background: #3498db; 
+#how,#start-button, #play-again, #rematch{
+    background: #3498dbd0; 
     width: 180px;
     margin: 10px;
     text-align:center;
     border: 1px solid #42e8f4;
     width: 300px;
     height: 70px;
-}
-button{
-    font-size: 40px;
+    border-radius: 50%;
     color: white;
-    padding:1px;
-    border-radius: 47%;
+    font-size: 30px;
 }
+
+#rematch.hover{
+    color: white;
+}
+
+#rematch-container{
+    text-align: center;
+    /* display: none; */
+    margin: 0 auto;
+}
+
 
 /* The Modal */
 .modal{
@@ -78,6 +169,7 @@ button{
 
 .model-content{ /*   styling positions text to center   */
     position: absolute;
+    text-align: center;
     top: 50%;
     transform: translate (-50%, -50%);
     background-color: white;
@@ -87,7 +179,7 @@ button{
 
 .close{
     float: right;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     cursor: pointer;
     border-radius: .25rem;
@@ -110,7 +202,7 @@ button{
 
 
 /* For mobile phones: */
-[class*="col-"] {
+[body*="col-"] {
     width: 100%;
   }
   

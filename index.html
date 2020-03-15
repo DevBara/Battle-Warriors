@@ -3,39 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Play Battle Warriors</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
 </head>
 <body>
-    <h1>Battle Warriors</h1>
-    <!-- Game Container -->
-    <div id="container">
-    <div class="buttons">
-        <button id="begin" class ="start"> Start </button>
-        <div class ="divider"></div>
+    
+    <div id ="title-container">
+        <div id="title"> Battle Warriors</div>
+        <div id="subtitle"> Will You Reign As Lord of The Seas?</div>
+        <div id="current-player-turn"></div>
+    </div>
+    <div id ="left-game-board">
+        <div id="player1-container">
+            <div id="player1"></div>
+            <h1>Player 1</h1>
+            <div id="player1-board" class ="board"></div>
+        </div>
+    </div>
+    <div id ="right-game-board">
+        <div id="player2-container">
+            <div id="player2"></div>
+            <h1>Player 2</h1>
+            <div id="player2-board" class ="board"></div> 
+        </div>
+    </div>
+    <!-- <div id="game-board-container">
+        <div id="game-board-text"> What size of game board?</div>
+        <div id = "row-text-container">
+            <div id="row-text">Rows:</div>
+            <input id="row-input" placeholder ="Default 10">
+        </div>
+        <div id ="column-text-container">
+            <div id="column-text">Rows:</div>
+            <input id="column-input" placeholder ="Default 10">
+        </div> -->
+        <!-- <div id="next-button-container">
+            <button id ="next-button">Next</button>
+        </div> -->
+    <!-- </div>  -->
+
+    <div id="start-button-container">
+        <button id="start-button" onClick="start()" >Start</button>
+    </div>
+    <div id="turn-tracker-container">
+        <div id="turn-tracker"></div>
+    </div>
+    <div id="rematch-container">
+        <button id="rematch">Rematch?</button>
+    </div>
+        
+    <div id="how-to-container">
         <button id ="how" class ="howto"> How To?</button>
     </div>
-    <div class="modal">
+        <div class="modal">
         <div class ="modal-content">
             <span class ="close">&times;</span>
                 <h3>Instructions</h3>
-                    <ol>
-                        <li> Press the START button to begin </li>
-                        <li> Players take turns firing shots, there is 1 shot per turn. A shot is accomplished by click on one square.</li>
-                        <li> If you hit the other player ship, you are alloted another turn until you miss.</li>
-                        <li> If you miss the other player ship, your turn ends.</li>
-                        <li> If any player successfully hits the opposite opponent ship, the square will turn red.</li>
-                        <li> The first player to sink all 3 of their opponent ships wins the game.</li>
-                        
-                    </ol>
-                </div>
-            </div>
+                <ol>
+                    <li> Press the START button to begin </li>
+                    <li> Players take turns firing shots, there is 1 shot per turn. A shot is accomplished by click on one square.</li>
+                    <li> If you hit the other player ship, you are alloted another turn until you miss.</li>
+                    <li> If you miss the other player ship, your turn ends.</li>
+                    <li> If any player successfully hits the opposite opponent ship, the square will turn red.</li>
+                    <li> The first player to sink all 3 of their opponent ships wins the game.</li>
+                </ol>
         </div>
     </div>
-
-
 
     <script src="main.js"></script>
 </body>
