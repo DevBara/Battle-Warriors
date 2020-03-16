@@ -20,12 +20,14 @@ function windowOnClick(event){
 openModal.addEventListener("click", toggleModal);
 closeModal.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
-//end modal functions & letiable declarations 
+//end modal function
 
-// This will start the game
-function start(){
-    document.getElementById('start-button-container').onclick
-    console.log("start");
-}
+//On start button click, show gameboards
 
+
+
+//Function that determines when the game is won
+
+
+//Function that gives player ability to restart
 

@@ -16,7 +16,7 @@
         <div id="current-player-turn"></div>
     </div>
    
-    <table id="player-1-board">
+    <table id="player-1-board" class="hidden">
         <caption>Player 1</caption>
         <tr>
             <td class="one"></td>
@@ -125,7 +125,7 @@
         <table id="player-2-board">
             <caption>Player 2</caption>
             <tr>
-                <td class="one"></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -243,12 +243,10 @@
                 <td></td>
                 <td></td>
             </tr>
-            
-            
         </table>
 
     <div id="start-button-container">
-        <button id="start-button" onClick="start()" >Start</button>
+        <button id="startButton" onClick="start()" >Start</button>
     </div>
     <div id="turn-tracker-container">
         <div id="turn-tracker"></div>
