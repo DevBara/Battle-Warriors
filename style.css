@@ -26,93 +26,25 @@ body{
     margin-top: -20px;
 }
 
-/* .board{
-    width: 500px;
-    height: 20px;
-    display: block;
-    float: left;
-    border: 1px solid red;
-} */
-#left-game-board, #right-game-board{
-    position: relative;
-    width: 50%;
-    float:left;
-    padding-top: 5%;
-    color:white;
-}
-
- #player1-board,#player2-board {
-    position: relative;
-    margin: 50px auto 0 auto;
-    width: 500px;
-    height: 500px;
-    border: 5px solid #ccc;
-    border-radius: 5px;
-    background-color: #03A9F4;
-    transition: all .1s;
-  } 
-
-#player1-container,#player2-container{
-    position: relative;
-    width: 500px;
-} 
-
-#player1-container,#player2-container{
-    text-align: center;
-    color:white;
-}
-
-#game-board-container{
-    text-align: center;
-    font-size: 25px;
-    margin: 110px auto 30px auto;
-    display: none;
-} 
-
-#game-board-text{
-    color: white;
-}
-
-#row-text-container{
-    margin-top: 20px;
-    display: inline-block;
-}
-
-#column-text-container{
-    margin-top: 20px;
-    display: inline-block;
-}
 
 #next-button{
     text-align: center;
     width: 180px;
     margin: 10px;
     font-size: 40px;
-
 }
 
 #current-player-turn{
     font-size: 25px;
     color: white
 }
-/* .board{
-    width: 600px;
-    height: 20px;
-    display: block;
-    float: left;
-    border: 1px solid red;
-} */
 
 h3{
     font-size: 70px;
     text-align: center;
     color:white;
 }
-/* .divider{
-    width:10px;
-    height:auto;
-    display:inline-block;
-} */
+
 
 li{
     list-style: none;
@@ -128,17 +60,70 @@ li{
     color: orange
 }
 
-#how,#start-button, #play-again, #rematch{
+#how,#start-button, #rematch{
     background: #3498dbd0; 
-    width: 180px;
+    width: 300px;
+    height: 70px;
     margin: 10px;
     text-align:center;
     border: 1px solid #42e8f4;
-    width: 300px;
-    height: 70px;
     border-radius: 50%;
     color: white;
     font-size: 30px;
+}
+
+table{
+    margin: 50px auto 0 auto;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #03A9F4;
+    transition: all .1s;
+    padding: 10px;
+  } 
+  
+table, tr,td{
+    border: solid .05px white;
+    font-size: 5px;
+    text-align: center;
+}
+
+#player-1-board{
+    position: relative;
+    top: 90px;
+    left: 25px;
+    float:left;
+    
+}
+
+#player-2-board{
+    position:relative;
+    position: relative;
+    top: 90px;
+    right: 25px;
+    float: right;
+}
+
+caption{
+    font-size: 30px;
+    color: white;
+}
+
+td:hover{
+    background-color: rgba(255,255,255,0.7);
+}
+
+#gameContainer{
+    overflow:hidden;
+}
+
+#left-game-board{
+    float: left;
+}
+
+#right-game-board{
+    float: right;
 }
 
 #rematch.hover{

@@ -1,5 +1,4 @@
-
-let restartButton;
+//Variables
 
 
 // Originally I used getElementByClass, however doing so, elements were not calling correctly 
@@ -29,10 +28,4 @@ function start(){
     console.log("start");
 }
 
-function gameInitialize(){
-    restartButton=document.getElementById("rematch");
-    restartButton.addEventListener("click");
-   return gameInitialize
-}
 
-console.log(gameInitialize)
