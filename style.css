@@ -100,10 +100,9 @@ table, tr,td{
 
 #player-2-board{
     position:relative;
-    position: relative;
     top: 90px;
     right: 25px;
-    float: right;
+    float: left;
     display:none;
 }
 
