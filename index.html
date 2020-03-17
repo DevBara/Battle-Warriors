@@ -16,30 +16,48 @@
         <div id="current-player-turn"></div>
     </div>
     <table class="board" id="boardOne">
-        <caption>Player 1</caption>
-        <tr>
-            <td class="one"></td>
-            <td class="play1"></td>
-            <td id="play2"></td>
-            <td id="play3"></td>
-            <td id=play4></td>
-            <td id="play5"></td>
+        <tr> <!-- first row -->
+            <td id="play1" class="hit" onclick="hitTarget()">
+                <img src="images/cherry.png">
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
-        <tr> <td></td>
+        <!-- 2nd row -->
+        <tr> 
+            <td class="hit1" onclick="hitTarget1()">
+                <img src="images/cherry.png">
+            </td>
             <td></td>
             <td></td>
+            <td class="hit2" onclick="hitTarget2()">
+                <img src="images/cherry.png">
+            </td>
+            <td class="hit3" onclick="hitTarget3()">
+                <img src="images/cherry.png">
+            </td>
             <td></td>
             <td></td>
             <td></td>
+            <td class="hit4" onclick="hitTarget4()">
+                <img src="images/cherry.png">
+            </td>
             <td></td>
+        </tr>
+        <!-- 3rd row -->
+        <tr> 
+            <td class="hit5" onclick="hitTarget5()">
+                <img src="images/cherry.png">
+            </td>
             <td></td>
             <td></td>
-            <td></td></tr>
-        <tr> <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -47,9 +65,10 @@
             <td></td>
             <td></td>
             <td></td>
+        </tr>
+        <!-- 4th row -->
+        <tr> 
             <td></td>
-            <td></td></tr>
-        <tr> <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -58,19 +77,29 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td></tr>
-        <tr> <td></td>
             <td></td>
+        </tr>
+        <!--6th row- BLANK-->
+        <tr></tr>
+        <!-- 5th row -->
+        <tr> 
             <td></td>
             <td></td>
             <td></td>
+            <td class="hit6" onclick="hitTarget6()">
+                <img src="images/cherry.png">
+            </td>
+            <td class="hit7" onclick="hitTarget7()">
+                <img src="images/cherry.png">
+            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td></tr>
-        <tr> <td></td>
             <td></td>
+        </tr>
+        <!-- 6th row -->
+        <tr> 
             <td></td>
             <td></td>
             <td></td>
@@ -78,171 +107,47 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td></tr>
-        <tr> <td></td>
             <td></td>
             <td></td>
             <td></td>
+        </tr>
+        <!-- 7th row -->
+        <tr> 
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+            <td class="hit8" onclick="hitTarget8()">
+                <img src="images/cherry.png">
+            </td>
+            <td class="hit9" onclick="hitTarget9()">
+                <img src="images/cherry.png">
+            </td>
+            <td class="hit10" onclick="hitTarget10()">
+                <img id="hello" src="images/cherry.png">
+            </td>
             <td></td>
-            <td></td></tr>
-        <tr> <td></td>
             <td></td>
             <td></td>
+        </tr>
+        <!-- 8th row -->
+        <tr> 
             <td></td>
             <td></td>
+            <td class ="hit11" onclick="hitTarget10()">
+                <img src="images/cherry.png">
+            </td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td></tr>
-        <tr> <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td></tr>
-        <tr> <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td></tr>
+        </tr>
         </table>
-        <br>
-        <table class="board" id="boardTwo">
-            <caption>Player 2</caption>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr> 
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr> 
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr> 
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr> 
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr> 
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr> 
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr> <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr> 
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+        
+       
 
     <div id="start-button-container">
         <input type="button" value="Start" id="startButton"> 
