@@ -42,6 +42,43 @@ document.getElementById("startButton").addEventListener("click",function()
 
 })
 
+//functions for misses
+function missedFire1(){
+    let target= document.getElementsByClassName('miss1');
+    for(let item of target){
+        item.style.backgroundColor="yellow";
+        alert("You Missed.");
+    }
+}
+
+function missedFire2(){
+    let target= document.getElementsByClassName('miss2');
+    for(let item of target){
+        item.style.backgroundColor="yellow";
+        alert("You Missed.");
+    }
+}
+
+function missedFire3(){
+    let target= document.getElementsByClassName('miss3');
+    for(let item of target){
+        item.style.backgroundColor="yellow";
+        alert("You Missed.");
+    }
+}
+
+function missedFire4(){
+    let target= document.getElementsByClassName('miss4');
+    for(let item of target){
+        item.style.backgroundColor="yellow";
+        alert("You Missed.");
+    }
+    break;
+}
+
+
+
+//functions for hits
 //Player 1 Cruiser 2/3 3/3 = Hit6
 function hitTarget1(){
     let target= document.getElementsByClassName('hit');
@@ -143,14 +180,24 @@ function hitTarget12(){
 
 
 function hitDestroyer (){
-        if(hitTarget11 === "red" & hitTarget10 === "red" & hitTarget9 === "red"){
-        alert ("You have sunk Player 2 Cruiser");
+        if('hit11' === "red" && 'hit10' === "red" && 'hit9' === "red"){
+            console.log("does this work?");
+        // alert ("You have sunk Player 2 Cruiser");
         } else{
-        alert("hit");
+        alert("Player 2 Ship has been hit!");
 
     }
 }
 
+
+//TO DO
+//instead of using HTML Table, create board using JS
+        //draw canvas
+        //create array 
+//Create function that restart game
+//Give ability to save game pieces on side
+//Give ability for 2 players
+//Create function for a winner
 
 
 

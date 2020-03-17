@@ -13,20 +13,24 @@
     <div id ="title-container">
         <div id="title"> Battle Warriors</div>
         <div id="subtitle"> Will You Reign As Lord of The Seas?</div>
-        <div id="current-player-turn"></div>
+        <!-- <div id="current-player-turn"></div> -->
     </div>
     <br>
     <table class="board" id="boardOne">
         <tr> <!-- first row -->
+            <!-- Quickly learned that using a table was THE WORSE OPTION! had to create individual classes/ids/functions for each td
+            Definetly not good practice! -->
+            <!--Added missed fire functions just to showcase the repetiveness. Using an array would had been best choice. 
+            Loops would be able to "see" into gameboard to approve conditions-->
             <td id="play1" class="hit" onclick="hitTarget1()">
                 <img src="images/cherry.png">
             </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class ="miss1" onclick="missedFire1()"></td>
+            <td class ="miss2" onclick="missedFire2()"></td>
+            <td class ="miss3" onclick="missedFire3()"></td>
+            <td class ="miss4" onclick="missedFire4()"></td>
+            <td class ="miss5" onclick="missedFire5()"></td>
+            <td class ="miss6" onclick="missedFire6()"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -150,26 +154,24 @@
         
        
 
-    <div id="start-button-container">
+    <div id="button-container">
         <input type="button" value="Start" id="startButton"> 
+        <input type="button" value="How To?" id ="how" class ="howto">
     </div>
     <!-- <div id="turn-tracker-container">
         <div id="turn-tracker"></div>
     </div>
-    <div id="rematch-container">
+    -->
+    <!-- <div id="rematch-container">
         <button id="rematch">Rematch?</button>
-    </div>
-         -->
-    <div id="how-to-container">
-        <button id ="how" class ="howto"> How To?</button>
-    </div>
+    </div> -->
         <div class="modal">
         <div class ="modal-content">
             <span class ="close">&times;</span>
                 <h3>Instructions</h3>
                 <ol>
                     <li> Press the START button to begin </li>
-                    <li> Players take turns firing shots, there is 1 shot per turn. A shot is accomplished by click on one square.</li>
+                    <li> Players take turns firing shots. To fire a shot, click on a square.</li>
                     <li> If you hit the other player ship, you are alloted another turn until you miss.</li>
                     <li> If you miss the other player ship, your turn ends.</li>
                     <li> If any player successfully hits the opposite opponent ship, the square will turn red.</li>
