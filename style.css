@@ -27,13 +27,6 @@ body{
 }
 
 
-#next-button{
-    text-align: center;
-    width: 180px;
-    margin: 10px;
-    font-size: 40px;
-}
-
 #current-player-turn{
     font-size: 25px;
     color: white
@@ -59,8 +52,8 @@ li{
     margin: 120px auto 0px auto;
     color: orange
 }
-
-#how,#startButton, #rematch{
+/* Buttons */
+#how,#startButton, #rematchButton{
     background: #3498dbd0; 
     width: 300px;
     height: 70px;
@@ -72,6 +65,9 @@ li{
     font-size: 30px;
 }
 
+#startContainer{
+    position:initial;
+}
 table{
     margin: 50px auto 0 auto;
     width: 500px;
@@ -79,17 +75,17 @@ table{
     border: 2px solid #ccc;
     border-radius: 5px;
     background-color: #03A9F4;
-    transition: all .1s;
-    padding: 10px;
+    padding: 5px;
   } 
   
 table, tr,td{
     border: solid .05px white;
-    font-size: 5px;
+    font-size: 1em;
     text-align: center;
 }
 
-#player-1-board{
+
+#boardOne{
     position: relative;
     top: 90px;
     left: 25px;
@@ -98,9 +94,8 @@ table, tr,td{
     
 }
 
-#player-2-board{
+#boardTwo{
     position:relative;
-    position: relative;
     top: 90px;
     right: 25px;
     float: right;
@@ -116,29 +111,9 @@ td:hover{
     background-color: rgba(255,255,255,0.7);
 }
 
-#gameContainer{
-    overflow:hidden;
+#gameboards{
+    padding: 1%;
 }
-
-#left-game-board{
-    float: left;
-}
-
-#right-game-board{
-    float: right;
-}
-
-#rematch.hover{
-    color: white;
-}
-
-#rematch-container{
-    text-align: center;
-    /* display: none; */
-    margin: 0 auto;
-}
-
-
 /* The Modal */
 .modal{
     margin-right: auto;
@@ -181,6 +156,14 @@ td:hover{
     visibility: visible;
     transform: scale(1);
     transition: visibility 0s linear 0s, opacity .25s 0s, transform .25s;
+}
+
+.hide{
+    display:none;
+}
+
+.show{
+    display: block;
 }
 
 /* End of Modal styling */

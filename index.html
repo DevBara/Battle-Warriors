@@ -15,16 +15,16 @@
         <div id="subtitle"> Will You Reign As Lord of The Seas?</div>
         <div id="current-player-turn"></div>
     </div>
-   
-    <table id="player-1-board" class="hidden">
+   <div>
+    <table id="boardOne" class="hidden">
         <caption>Player 1</caption>
         <tr>
             <td class="one"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="play1"></td>
+            <td id="play2"></td>
+            <td id="play3"></td>
+            <td id=play4></td>
+            <td id="play5"></td>
             <td></td>
             <td></td>
             <td></td>
@@ -121,8 +121,7 @@
             <td></td>
             <td></td></tr>
         </table>
-
-        <table id="player-2-board">
+        <table id="boardTwo">
             <caption>Player 2</caption>
             <tr>
                 <td></td>
@@ -244,9 +243,10 @@
                 <td></td>
             </tr>
         </table>
+    </div>
 
     <div id="start-button-container">
-        <button id="startButton" onClick="start()" >Start</button>
+        <input type="button" value="Start" id="startButton" onClick="start()"> 
     </div>
     <div id="turn-tracker-container">
         <div id="turn-tracker"></div>
