@@ -41,19 +41,11 @@ document.getElementById("startButton").addEventListener("click",function()
     }
 
 })
-function hitTarget(){
+function hitTarget1(){
     let target= document.getElementsByClassName('hit');
     for(let item of target){
         item.style.backgroundColor="red";
-        alert("Hit!");
-    }
-}
-
-function hitTarget1(){
-    let target= document.getElementsByClassName('hit1');
-    for(let item of target){
-        item.style.backgroundColor="red";
-        alert("Hit!");
+        alert("Player 1 Ship has been hit!");
     }
 }
 
@@ -61,35 +53,40 @@ function hitTarget2(){
     let target= document.getElementsByClassName('hit2');
     for(let item of target){
         item.style.backgroundColor="red";
-        alert("Hit!");
+        alert("Player 1 Ship has been hit!");
     }
 }
+
 function hitTarget3(){
     let target= document.getElementsByClassName('hit3');
     for(let item of target){
         item.style.backgroundColor="red";
-        alert("Hit!");
+        alert("Player 1 Ship has been hit!");
     }
 }
 function hitTarget4(){
     let target= document.getElementsByClassName('hit4');
     for(let item of target){
         item.style.backgroundColor="red";
-        alert("Hit!");
+        alert("Player 1 Ship has been hit!");
     }
 }
+
+//Destroyer
 function hitTarget5(){
     let target= document.getElementsByClassName('hit5');
     for(let item of target){
         item.style.backgroundColor="red";
-        alert("Player 2 Ship has been hit!");
+        alert("You have sunk Player 1 Destroyer");
     }
 }
+
+//Hit Cruiser
 function hitTarget6(){
     let target= document.getElementsByClassName('hit6');
     for(let item of target){
         item.style.backgroundColor="red";
-        alert("Player 2 Ship has been hit!");
+        alert("Player 1 Ship has been hit!");
     }
 }
 function hitTarget7(){
@@ -106,6 +103,8 @@ function hitTarget8(){
         alert("Player 2 Ship has been hit!");
     }
 }
+
+//Hit Submarine
 function hitTarget9(){
     let target= document.getElementsByClassName('hit9');
     for(let item of target){
@@ -120,6 +119,34 @@ function hitTarget10(){
         alert("Player 2 Ship has been hit!");
     }
 }
+function hitTarget11(){
+    let target= document.getElementsByClassName('hit11');
+    for(let item of target){
+        item.style.backgroundColor="red";
+        alert("Player 2 Ship has been hit!");
+    }
+}
+
+//Hit Player 2 Destroyer
+function hitTarget12(){
+    let target= document.getElementsByClassName('hit12');
+    for(let item of target){
+        item.style.backgroundColor="red";
+        alert("You have sunk Player 2 Destroyer");
+    }
+}
+
+
+function hitDestroyer (){
+    if('hit11' && 'hit10' && 'hit9' === "red"){
+        alert ("You have sunk Player 2 Cruiser");
+    } else{
+        
+    }
+}
+
+
+
 
 // function winGame{
 
