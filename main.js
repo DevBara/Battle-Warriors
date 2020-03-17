@@ -36,16 +36,49 @@ closeModal.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 //end modal function
 
+<<<<<<< HEAD
 //Show Player 1 Board
 document.getElementById("startButton").addEventListener("click",function()
 {
     let showBoard= document.getElementById("boardOne");
+=======
+//On start button click, show gameboards
+document.getElementById("startButton").addEventListener("click",function()
+{
+    let showBoard= document.getElementById("player-1-board");
+>>>>>>> 2a1a44cb77ebfefe4be7016ea2b489773edd7ca2
     if(showBoard.style.display=="none"){
         showBoard.style.display ="table";
     } else{
         showBoard.style.display="none";
+<<<<<<< HEAD
         document.getElementById('startContainer').classList.add('show');
     }
+=======
+    }
+
+})
+
+document.getElementById("startButton").addEventListener("click",function()
+{
+    let showBoard= document.getElementById("player-2-board");
+    if(showBoard.style.display=="none"){
+        showBoard.style.display ="table";
+    } else{
+        showBoard.style.display="none";
+    }
+
+})
+    // let a variable equal to start id, grab it
+  
+    // Once that is grab if styling says Hide button will show board
+
+
+
+
+
+//Function that determines when the game is won
+>>>>>>> 2a1a44cb77ebfefe4be7016ea2b489773edd7ca2
 
 })
 //Player 2 Board
