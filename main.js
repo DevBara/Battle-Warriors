@@ -5,6 +5,8 @@
 // Cruiser = 3
 // Submarine = 2
 // Destroyer = 1
+// Misses= yellow
+//Hits = Red
 
 // Originally I used getElementByClass, however doing so, elements were not calling correctly 
 let modal = document.querySelector('.modal');
@@ -69,6 +71,22 @@ function missedFire3(){
 
 function missedFire4(){
     let target= document.getElementsByClassName('miss4');
+    for(let item of target){
+        item.style.backgroundColor="yellow";
+        alert("You Missed.");
+    }
+    break;
+}
+function missedFire5(){
+    let target= document.getElementsByClassName('miss5');
+    for(let item of target){
+        item.style.backgroundColor="yellow";
+        alert("You Missed.");
+    }
+    break;
+}
+function missedFire6(){
+    let target= document.getElementsByClassName('miss6');
     for(let item of target){
         item.style.backgroundColor="yellow";
         alert("You Missed.");
@@ -178,24 +196,33 @@ function hitTarget12(){
     }
 }
 
-
-function hitDestroyer (){
-        if('hit11' === "red" && 'hit10' === "red" && 'hit9' === "red"){
-            console.log("does this work?");
-        // alert ("You have sunk Player 2 Cruiser");
-        } else{
-        alert("Player 2 Ship has been hit!");
-
-    }
-}
+//Jquery to hide how to button on click
+// $("how").click(function(){
+//     $("howto").hide();
+//   });
 
 
-//TO DO
+// This function would look for cells that are red,indicating a hit, certain cells equal a battleship
+//This code works but it would not read the table correctly due to board being created in HTML
+//Best practice would be to create a gameboard using ARRAY then CANVAS Draw
+
+// function hitDestroyer (){
+//         if('hit11' === "red" && 'hit10' === "red" && 'hit9' === "red"){
+//             console.log("does this work?");
+//         // alert ("You have sunk Player 2 Cruiser");
+//         } else{
+//         alert("Player 2 Ship has been hit!");
+
+//     }
+// }
+
+
+//TO DO 
 //instead of using HTML Table, create board using JS
         //draw canvas
         //create array 
 //Create function that restart game
-//Give ability to save game pieces on side
+//Give ability to save game pieces on side using pop & join array methods
 //Give ability for 2 players
 //Create function for a winner
 
