@@ -75,7 +75,7 @@ table{
     border: 2px solid #ccc;
     border-radius: 5px;
     background-color: #03A9F4;
-    padding: 5px;
+    /* padding: 5px; */
   } 
   
 table, tr,td{
@@ -90,7 +90,8 @@ table, tr,td{
     top: 90px;
     left: 25px;
     float:left;
-    display:none;
+   
+    
 }
 
 #boardTwo{
@@ -98,7 +99,6 @@ table, tr,td{
     top: 90px;
     right: 25px;
     float: right;
-    display:none;
 }
 
 caption{
@@ -110,9 +110,6 @@ td:hover{
     background-color: rgba(255,255,255,0.7);
 }
 
-#gameboards{
-    padding: 1%;
-}
 /* The Modal */
 .modal{
     margin-right: auto;

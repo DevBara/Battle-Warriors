@@ -15,8 +15,7 @@
         <div id="subtitle"> Will You Reign As Lord of The Seas?</div>
         <div id="current-player-turn"></div>
     </div>
-   <div>
-    <table id="boardOne" class="hidden">
+    <table class="board" id="boardOne">
         <caption>Player 1</caption>
         <tr>
             <td class="one"></td>
@@ -121,7 +120,8 @@
             <td></td>
             <td></td></tr>
         </table>
-        <table id="boardTwo">
+        <br>
+        <table class="board" id="boardTwo">
             <caption>Player 2</caption>
             <tr>
                 <td></td>
@@ -243,18 +243,17 @@
                 <td></td>
             </tr>
         </table>
-    </div>
 
     <div id="start-button-container">
-        <input type="button" value="Start" id="startButton" onClick="start()"> 
+        <input type="button" value="Start" id="startButton"> 
     </div>
-    <div id="turn-tracker-container">
+    <!-- <div id="turn-tracker-container">
         <div id="turn-tracker"></div>
     </div>
     <div id="rematch-container">
         <button id="rematch">Rematch?</button>
     </div>
-        
+         -->
     <div id="how-to-container">
         <button id ="how" class ="howto"> How To?</button>
     </div>
