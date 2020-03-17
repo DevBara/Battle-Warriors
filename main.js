@@ -41,6 +41,8 @@ document.getElementById("startButton").addEventListener("click",function()
     }
 
 })
+
+//Player 1 Cruiser 2/3 3/3 = Hit6
 function hitTarget1(){
     let target= document.getElementsByClassName('hit');
     for(let item of target){
@@ -57,6 +59,7 @@ function hitTarget2(){
     }
 }
 
+//Player 1 Submarine
 function hitTarget3(){
     let target= document.getElementsByClassName('hit3');
     for(let item of target){
@@ -72,7 +75,7 @@ function hitTarget4(){
     }
 }
 
-//Destroyer
+// Player 1 Destroyer
 function hitTarget5(){
     let target= document.getElementsByClassName('hit5');
     for(let item of target){
@@ -89,6 +92,8 @@ function hitTarget6(){
         alert("Player 1 Ship has been hit!");
     }
 }
+
+//Hit Player 2 Submarine
 function hitTarget7(){
     let target= document.getElementsByClassName('hit7');
     for(let item of target){
@@ -104,7 +109,7 @@ function hitTarget8(){
     }
 }
 
-//Hit Submarine
+//Hit PLayer 2 Cruiser
 function hitTarget9(){
     let target= document.getElementsByClassName('hit9');
     for(let item of target){
@@ -138,24 +143,15 @@ function hitTarget12(){
 
 
 function hitDestroyer (){
-    if('hit11' && 'hit10' && 'hit9' === "red"){
+        if(hitTarget11 === "red" & hitTarget10 === "red" & hitTarget9 === "red"){
         alert ("You have sunk Player 2 Cruiser");
-    } else{
-        
+        } else{
+        alert("hit");
+
     }
 }
 
 
 
 
-// function winGame{
 
-// }
-        
-
-    // function hideStart(){
-
-    //     document.getElementById('startContainer').classList.add('show');
-    //     document.getElementById('how').classList.add('hide');
-    //     document.getElementById('rematchButton').classList.add('hide');
-    // }
